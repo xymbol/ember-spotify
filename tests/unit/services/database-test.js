@@ -11,12 +11,12 @@ test('it exists', function(assert) {
   assert.ok(service);
 });
 
-test('it has featuredPlaylist', function(assert) {
-  var hasFeaturedPlaylist = this.subject().get('featuredPlaylist');
-  assert.ok(hasFeaturedPlaylist);
+test('it finds all featured playlists', function(assert) {
+  var records = this.subject().findAll('featured-playlist');
+  assert.equal(records.length, 10);
 });
 
-test('it has genres', function(assert) {
-  var hasGenres = this.subject().get('genres');
-  assert.ok(hasGenres);
+test('it finds all genres', function(assert) {
+  var records = this.subject().findAll('genre');
+  assert.equal(records.length, 11);
 });

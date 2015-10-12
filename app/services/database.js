@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-  
   "featuredPlaylist": [{
     "id": "1",
     "name": "Cafe Libros",
@@ -373,7 +372,7 @@ export default Ember.Service.extend({
       "duration": "03:22"
     }]
   }],
-  "genres": [{
+  "genre": [{
     "image": "assets/genres/party.jpg",
     "name": "Party"
   }, {
@@ -406,5 +405,9 @@ export default Ember.Service.extend({
   }, {
     "image": "assets/genres/genre.jpg",
     "name": "Genre"
-  }]
+  }],
+
+  findAll(modelName) {
+    return this.get(modelName.camelize());
+  }
 });
