@@ -1,0 +1,18 @@
+<h3>
+  Featured Playlists
+</h3>
+<ul class="playlists">
+  {{#each model.playlists as |playlist|}}
+    <li>{{playlist.name}}</li>
+  {{/each}}
+</ul>
+<h3>
+  Genres
+</h3>
+<ul class="genres">
+  {{#each model.genres as |genre|}}
+    <li>{{genre.name}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
