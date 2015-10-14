@@ -1,11 +1,35 @@
-<h2 id="title">
-  {{link-to "Ember Spotify" "index"}}
-</h2>
-<nav>
-  <ul>
-    <li>{{link-to "Featured Playlists" "featured-playlists"}}</li>
-    <li>{{link-to "Genres" "genres"}}</li>
-  </ul>
-</nav>
-
-{{outlet}}
+<div id="wrapper">
+  <div id="main-nav" class="main-menu narrow-menu">
+    <a href="/" id="logo" class="logo"></a>
+    <ul id="nav-items">
+      {{#link-li}}
+        {{#link-to 'search' class="fa fa-search standard-menu-item"}}
+          <span class="nav-text">Search</span>
+        {{/link-to}}
+      {{/link-li}}
+      {{#link-li}}
+        {{#link-to 'browse' class="fa fa-archive standard-menu-item"}}
+          <span class="nav-text">Browse</span>
+        {{/link-to}}
+      {{/link-li}}
+      {{#link-li}}
+        {{#link-to 'radio' class="fa fa-wifi standard-menu-item"}}
+          <span class="nav-text">Radio</span>
+        {{/link-to}}
+      {{/link-li}}
+      {{#link-li}}
+        {{#link-to 'collection' class="fa fa-headphones standard-menu-item"}}
+          <span class="nav-text">Your Music</span>
+        {{/link-to}}
+      {{/link-li}}
+      {{#link-li}}
+        {{#link-to 'follow' class="fa fa-users standard-menu-item"}}
+          <span class="nav-text">Follow</span>
+        {{/link-to}}
+      {{/link-li}}
+    </ul>
+  </div>
+  <div id="main" class="container">
+    {{outlet}}
+  </div>
+</div>
