@@ -1,0 +1,55 @@
+<div id="header" class="container-fluid">
+  <h1 class="main-header">Browse</h1>
+  <div class="local-nav" id="nav">
+    <div class="navbar-fixed-wrapper">
+      <div class="navbar">
+        <ul class="nav" data-log-context="nav-bar">
+          <li class="active"><a href="" data-log-click="nav-home">Overview</a></li>
+          <li><a href="" data-log-click="nav-charts">Charts</a></li>
+          <li><a href="" data-log-click="nav-genres">Genres &amp; Moods</a></li>
+          <li><a href="" data-log-click="nav-releases">New Releases</a></li>
+          <li><a href="" data-log-click="nav-discover">Discover</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-divider">
+  <div id="featuredPlaylistLabel">¡Dale play y disfruta!</div>
+  <div class="section-auxiliary">
+    <button class="button button-icon-only fa fa-chevron-left customPrevBtn" {{action "goToPrevious"}}></button>
+    <button class="button button-icon-only fa fa-chevron-right customNextBtn" {{action "goToNext"}}></button>
+  </div>
+</div>
+
+{{#owl-carousel  itemsDesktop="5" itemsTablet="3" itemsMobile="1"}}
+  {{#each model.playlists as |playlist|}}
+    <div class="item item-box">
+      <div class="mo-wrapper">
+        <div class="mo-image-wrapper">
+          <a href="">
+            <div class="mo-image" style="background-image: url(https://d3rt1990lpmkn.cloudfront.net/300/da5c478496058eba6122f2e3977685777046a56c)">
+            </div>
+            <span class="mo-verified">
+              <span class="spoticon-check-16"></span>
+            </span>
+            <div class="mo-overlay"></div>
+          </a>
+        </div>
+        <div class="mo-info description">
+          <div class="mo-info-wrapper">
+            <a class="mo-title" title="Discover Weekly" href="">
+              <span class="mo-title-border">
+                {{playlist.name}}
+                <span class="ellipsis">&nbsp;</span>
+              </span>
+            </a>
+            <div class="mo-description">Your weekly mixtape of fresh music. Enjoy new discoveries and deep cuts chosen just for you. Updated every Monday, so save your favourites!</div>
+            <div class="media-link-hider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+{{/owl-carousel}}

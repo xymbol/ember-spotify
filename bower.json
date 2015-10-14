@@ -10,10 +10,15 @@
     "ember-qunit-notifications": "0.1.0",
     "jquery": "^1.11.3",
     "loader.js": "ember-cli/loader.js#3.3.0",
-    "qunit": "~1.19.0"
+    "qunit": "~1.19.0",
+    "font-awesome": "~4.4.0"
   },
   "resolutions": {
     "ember": "canary",
     "ember-data": "canary"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.5",
+    "owl.carousel": "OwlCarousel2#~2.0.0-beta.3"
   }
 }
