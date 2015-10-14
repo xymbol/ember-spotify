@@ -21,6 +21,9 @@ module.exports = function(defaults) {
 
   app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
   app.import('bower_components/bootstrap/dist/js/bootstrap.min.js');
+  app.import('bower_components/OwlCarousel2/dist/assets/owl.carousel.css');
+  app.import('bower_components/OwlCarousel2/dist/assets/owl.theme.default.css');
+  app.import('bower_components/OwlCarousel2/dist/owl.carousel.js');
 
   return app.toTree();
 };
