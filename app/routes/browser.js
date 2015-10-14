@@ -9,12 +9,12 @@ export default Ember.Route.extend({
   },
   actions:{
     goToNext: function() {
-      var owl = $('.owl-carousel');
+      var owl = Ember.$('.owl-carousel');
       owl.trigger('next.owl.carousel');
     },
 
     goToPrevious: function() {
-      var owl = $('.owl-carousel');
+      var owl = Ember.$('.owl-carousel');
       owl.trigger('prev.owl.carousel', [300]);
     }
   }

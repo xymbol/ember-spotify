@@ -13,7 +13,7 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{owl-carousel}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.ok(this.$().text().trim());
 
   // Template block usage:
   this.render(hbs`
@@ -22,5 +22,5 @@ test('it renders', function(assert) {
     {{/owl-carousel}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.ok(this.$().text().trim().match(/template block text/));
 });
