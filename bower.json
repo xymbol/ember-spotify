@@ -16,5 +16,9 @@
   "resolutions": {
     "ember": "canary",
     "ember-data": "canary"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.5",
+    "owl.carousel": "OwlCarousel2#~2.0.0-beta.3"
   }
 }
