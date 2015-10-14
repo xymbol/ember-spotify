@@ -1,10 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return Ember.RSVP.hash({
-      playlists: this.database.findAll('featured-playlist'),
-      genres: this.database.findAll('genre')
-    });
+    beforeModel: function() {
+    this.transitionTo('browser');
   }
 });

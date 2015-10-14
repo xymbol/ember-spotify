@@ -1,1 +1,22 @@
-{{outlet}}
+<div id="header" class="container-fluid">
+  <h1 class="main-header">Browse</h1>
+  <div class="local-nav" id="nav">
+    <div class="navbar-fixed-wrapper">
+      <div class="navbar">
+        <ul class="nav" data-log-context="nav-bar">
+          <li class="active"><a href="" data-log-click="nav-home">Overview</a></li>
+          <li><a href="" data-log-click="nav-charts">Charts</a></li>
+          <li><a href="" data-log-click="nav-genres">Genres &amp; Moods</a></li>
+          <li><a href="" data-log-click="nav-releases">New Releases</a></li>
+          <li><a href="" data-log-click="nav-discover">Discover</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ul class="playlists">
+  {{#each model.playlists as |playlist|}}
+    <li>{{playlist.name}}</li>
+  {{/each}}
+</ul>
