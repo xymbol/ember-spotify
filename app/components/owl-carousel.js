@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   tagName: 'div',
   classNames: ['owl-carousel'],
 
-  didInsertElement: function(){
+  didInsertElement() {
     var self = this;
 
     self.$().owlCarousel({
