@@ -7,14 +7,14 @@ export default Ember.Route.extend({
       genres: this.database.findAll('genre')
     });
   },
-  actions:{
-    goToNext: function() {
-      var owl = $('.owl-carousel');
+
+  actions: {
+    goToNext() {
+      var owl = Ember.$('.owl-carousel');
       owl.trigger('next.owl.carousel');
     },
-
-    goToPrevious: function() {
-      var owl = $('.owl-carousel');
+    goToPrevious() {
+      var owl = Ember.$('.owl-carousel');
       owl.trigger('prev.owl.carousel', [300]);
     }
   }
