@@ -19,6 +19,11 @@ module.exports = function(environment) {
     }
   };
 
+  ENV.contentSecurityPolicy = {
+    'img-src': "'self' https://d3rt1990lpmkn.cloudfront.net https://glue-static.s3-external-3.amazonaws.com",
+    'style-src': "'self' 'unsafe-inline' https://d3rt1990lpmkn.cloudfront.net"
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
