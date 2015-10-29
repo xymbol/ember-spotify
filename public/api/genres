@@ -1,0 +1,47 @@
+{
+  "genres": [{
+    "image": "assets/genres/party.jpg",
+    "name": "Party",
+    "id": 1
+  }, {
+    "image": "assets/genres/chill.jpg",
+    "name": "Chill",
+    "id": 2
+  }, {
+    "image": "assets/genres/comedy.jpg",
+    "name": "Comedy",
+    "id": 3
+  }, {
+    "image": "assets/genres/romance.jpg",
+    "name": "Romance",
+    "id": 4
+  }, {
+    "image": "assets/genres/pop.jpg",
+    "name": "Pop",
+    "id": 5
+  }, {
+    "image": "assets/genres/latin.jpg",
+    "name": "Latin",
+    "id": 6
+  }, {
+    "image": "assets/genres/workout.jpg",
+    "name": "Workout",
+    "id": 7
+  }, {
+    "image": "assets/genres/edm.jpg",
+    "name": "Edm",
+    "id": 8
+  }, {
+    "image": "assets/genres/indie.jpg",
+    "name": "Indie",
+    "id": 9
+  }, {
+    "image": "assets/genres/decades.jpg",
+    "name": "Decades",
+    "id": 10
+  }, {
+    "image": "assets/genres/genre.jpg",
+    "name": "Genre",
+    "id": 11
+  }]
+}
