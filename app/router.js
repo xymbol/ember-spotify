@@ -6,8 +6,6 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('featured-playlists', {});
-  this.route('genres', {});
   this.route('browser', {});
   this.route('search', {});
   this.route('radio', {});
