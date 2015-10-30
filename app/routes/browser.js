@@ -1,10 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  database: Ember.inject.service(),
+
   model() {
     return Ember.RSVP.hash({
-      playlists: this.database.findAll('featured-playlist'),
-      genres: this.database.findAll('genre')
+      playlists: this.get('database').findAll('featured-playlist'),
+      genres: this.get('database').findAll('genre')
     });
   },
 
